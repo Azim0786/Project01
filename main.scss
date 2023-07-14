@@ -1,0 +1,292 @@
+$primary: #053462;
+$secondary: #ff0000;
+$dark: #0d0d0d;
+$light: white;
+
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+    height: 100vh;
+    position: relative;
+    
+    
+}
+
+.fist-col {
+    background-color: $secondary;
+    height: 2.5rem;
+}
+
+
+.carousel-text {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    // background-color: #f0f0f0;
+    color: $light;
+}
+
+.carousel-text:first-child {
+    margin-left: auto;
+}
+
+.carousel-text:last-child {
+    margin-right: auto;
+}
+
+.navbar>.container,
+.navbar>.container-fluid,
+.navbar>.container-lg,
+.navbar>.container-xl,
+.navbar>.container-xxl {
+    display: flex;
+    flex-direction: column;
+}
+.allcard {
+    margin-top: 40px;
+}
+.card {
+    border: none;
+    box-shadow: rgb(0 0 0 / 10%) 4px 4px 6px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plus {
+    font-size: 20px;
+    color: $light;
+
+    background-color: $primary;
+    padding: 0px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+
+}
+
+.product {
+    padding: 20px 20px 50px 20px;
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+// footer00
+.footer00{
+    background-color: $dark;
+    padding: 20px 120px 50px 20px;
+    margin-top: 5rem;
+}
+
+
+// form
+form {
+    // background-color: $light;
+    border-bottom: 1px solid gray;
+   width: 60%;
+
+}
+input {
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+button {
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+
+button img{
+    filter: invert(1);
+//   filter: grayscale(60%);
+}
+ul a {
+   text-decoration: none;
+    color: $light;
+
+}
+
+ul a:hover {
+   color: gray;
+
+}
+
+
+ul a li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+ul a li:hover {
+  color: gray;}
+
+
+//   newsletter
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+//   copyright
+
+  .copyright{
+    color: $light;
+  }
+
+  a {
+    text-decoration: none;
+    color: $light;
+
+ }
+  a:hover {
+    color: gray;
+
+ }
+// footer01
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute ;
+    // top:0;
+    bottom: 1rem;
+    background-color: $light;
+    padding: 10px 30px;
+    box-shadow:  -4px -4px 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+//  mediaquary
+
+@media (max-width: 992px) {
+    .navbar>.container,
+.navbar>.container-fluid,
+    .navbar>.container-sm,
+    .navbar>.container-md {
+      flex-direction: row; /* Change the flex direction to row for medium screens */
+    }
+}
+@media (max-width: 992px) {
+   .navdetails{
+     position: absolute;
+     
+    }
+}
+
+@media (max-width: 992px) {
+   .navdetails{
+     position: absolute;
+     
+    }
+}
+
+@media (max-width: 997px){
+
+    .newsletter{
+        padding-left: 2rem;
+        margin-top: 2rem;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+  
+}
+@media (max-width: 997px){
+
+    form {
+        // background-color: $light;
+        border-bottom: 1px solid gray;
+       width: 35%;
+    
+    }
+  
+}
+@media (max-width: 997px){
+
+    .payment{
+        // padding-left: 2rem;
+        margin-top: 2rem;
+    }
+}
+@media (min-width: 992px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+       
+        // height: 90vh;
+        position: sticky;
+    
+    
+    }
+}
+@media (max-width: 992px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+       
+        // height: 100vh;
+        // position: sticky;
+    
+    
+    }
+}
+
+
+
+// @media (min-width: 992px) {
+//     .mobile {
+//         display: none;
+       
+//         // height: 100vh;
+//         // position: sticky;
+    
+    
+//     }
+// }
+
+
+
+
+@media (max-width: 992px) {
+    .logocontent{
+        display: flex;
+        flex-direction: row-reverse;
+       
+        // height: 100vh;
+        // position: sticky;
+    
+    
+    }
+}
+
+
+ 
+
+
+
+
+    @media (min-width: 992px) {
+.navbar-expand-lg .navbarcontent{
+    flex-direction: column;
+}
+
+}
+    @media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+}
+
+}
